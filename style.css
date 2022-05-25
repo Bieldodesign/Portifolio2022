@@ -38,7 +38,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 22;
+    z-index: 20;
 }
 #menu li{
     display: inline;
