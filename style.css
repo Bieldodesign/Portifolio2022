@@ -128,7 +128,7 @@ li .project img{
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    ~webkit-overflow-scrlling: touch;
+   
 }
 
 .itemmana{
