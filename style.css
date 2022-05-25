@@ -31,7 +31,6 @@ body{
     background-color: snow;
     background-attachment: scroll;
 }
-
 #menubar{
     margin: 0;
     padding: 0;
@@ -76,6 +75,7 @@ li #icone{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 15%;
 }
 h1 {
     font-family: "InterBlack",sans-serif;
@@ -84,6 +84,7 @@ h1 {
     font-size: 96px;
     line-height: 116px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 #info{
     width: 45%;
@@ -100,6 +101,7 @@ h1 {
 
 #tituloproj{
     text-align: right;
+    margin-top: 20%;
 }
 li .project img{
     max-height: 500px;
@@ -115,61 +117,29 @@ li .project img{
     justify-content: space-between;
 }
 
-.carrossel {
-    display: block;
-    height: 293px;
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
+#popmana{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75vw;
 }
-.carrossel li {
-    list-style: none;
-    position: absolute;
+
+#carromana{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    ~webkit-overflow-scrlling: touch;
 }
-.carrossel img {
-    margin: auto;
-    height: 100%;
+
+.itemmana{
+    flex:none;
+    width: 50%;
+    height: 300px;
+    scroll-snap-align: start;
+}
+
+#carromana img{
     width: 100%;
-    vertical-align: top;
-}
-.carrossel input {
-    display: none;
-}
-.carrossel label {
-    background-color: white;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-}
-.carrossel li:nth-child(1) label {
-    left: 10px;
-}
-.carrossel li:nth-child(2) label {
-    left: 40px;
-}
-.carrossel li:nth-child(3) label {
-    left: 70px;
-}
-.carrossel li:nth-child(4) label {
-    left: 100px;
-}
-.carrossel li:nth-child(5) label {
-    left: 130px;
-}
-.carrossel li:nth-child(6) label {
-    left: 160px;
-}
-.carroseel img {
-    opacity: 0;
-    visibility: hidden;
-}
-.carrossel li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
+    height: 100%;
+    object-fit: cover;
 }
