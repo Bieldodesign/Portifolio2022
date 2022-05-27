@@ -9,6 +9,9 @@
         <title>Gabriel Palaoro</title>
     </head>
     <body>
+        
+        
+        <!--Menu!-->
         <div id="menu">
             <ul id="menubar">
                 <li><a href="https://github.com/Bieldodesign" class="menu-logo"><img src="images/git_icon.png" alt="giticon"></a></li> 
@@ -20,26 +23,26 @@
             </ul>
             
         </div>
+        <!--Introdução-->
         <div class="bio">
             <h1 class="titulo" id="info">Designer & Web dev</h1>
             <p id="bio">Prazer, sou Gabriel Palaoro, natural de Aracruz, Espírito Santo, Basil, estudante de Design na UFES, aficcionado por hitórias em quadrinhos e musica (além do design é claro), e a seguir terá uma coletanea dos trabalhos que fiz até então.<br><br><i>Hi, I am Gabriel Palaoro, from Aracruz, Espírito Santo, Brazil, I'm studying design at UFES, a comics and music lover (in addition a design obviously), followin up you will see some of my most recent works.</i></p>
        </div>
-        <section class="ProjectC">
+        
+        <!--Conteudo central (miniaturas mais titulo da seção)-->
             <h1 class="titulo" id="tituloproj">Projetos / <i>Projects</i></h1>
-            
+
+            <!-- Meio hq e botoes modais!-->
             <div id="blur" class="meio">
-                
-                 <div> <a id="imgmana" class="fotosmana" onclick="toggle()" ><img src="images/capa_mana.png" ></a>
+                 <div> <button class="fotosmeio" data-modal="modal1" ><img src="images/capa_mana.png" ></button>
                 </div>
-                <div><a class="fotossite" onclick="toggle()" id="img"><img src="images/capa_portifolio1.png" ></a></div>
-                <div><a class="fotosbrome" onclick="toggle()"><img src="images/capa_portifolio_brome.png"></a>
+                <div><a class="fotosmeio" data-modal="modal2"><img src="images/capa_portifolio1.png" ></a></div>
+                <div><a class="fotosmeio" data-modal="modal3"><img src="images/capa_portifolio_brome.png"></a>
                 </div>
-                <div><a class="fotosfilme" onclick="toggle()"><img src="images/capa_starway.png"></a></div>
+                <div><a class="fotosmeio"><img src="images/capa_starway.png"></a></div>
             </div>
-            
-            
-        </section>
-        <div class="popmanaclass" id="popmana">
+        <!--Modal Maná!-->
+        <div class="popmanaclass" id="modal1">
             <div class="conteudopop" id="contmana">
             <div id="carromana">
                 <div class="itemmana">
@@ -62,29 +65,20 @@
                  </div>
             </div>
             <div class="poptxt" id="manatxt">
-                <p><b>Projeto Maná:</b><br> redesign da marca da capotaria Maná, uma empresa que fica na periferia de Vitória e foi afetada diretamente pela pandemia, a intenção desse projeto fora reaquecer a vendas da capotaria trabalhando a marca e sua preseça digital</p>
+                <p><b>Projeto Maná:</b><br> Redesign da marca da capotaria Maná, uma empresa que fica na periferia de Vitória e foi afetada diretamente pela pandemia, a intenção desse projeto fora reaquecer a vendas da capotaria trabalhando a marca e sua preseça digital</p>
             </div>
             </div>
-            <a href ="#" class="closebtn" id="clx" onclick="toggle()">Fechar<i> / Close</i></a>
+            <a class="closebtn" id="clx" onclick="toggle()">Fechar<i> / Close</i></a>
             
             <a class="closebtn" id="fechar" onclick="toggle()"><img src="images/fechar-simbolo-de-botao-circular.png"> </a>
         </div>
+        
+        <!--Arvore de habilidades-->
         <section class="skills">
         <div id="skills">
             <h1 class="titulo" id="arvore">Árvore de Habilidades / <i>Skills Tree</i></h1>
             </div>
         </section>
-        
-        
-        <script type="text/javascript">
-                function toggle(){
-                    var blur = document.getElementById('blur');
-                    blur.classList.toggle('active');
-                    
-                    var popmana = document.getElementById('popmana');
-                    popmana.classList.toggle('active');  
-                    }
-            
-            </script>
+        <script src="app.js"></script>
     </body>
 </html>
