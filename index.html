@@ -26,18 +26,25 @@
        </div>
         <section class="ProjectC">
             <h1 class="titulo" id="tituloproj">Projetos / <i>Projects</i></h1>
-            <ul id="projectos">
-                <li><a href="#" class="project"><img src="images/capa_mana.png" ></a></li>
-                <li><a href="#" class="project"><img src="images/capa_portifolio1.png" ></a></li>
-                <li><a href="#" class="project"><img src="images/capa_portifolio_brome.png" ></a></li>
-                <li><a href="#" class="project"><img src="images/capa_starway.png"></a></li>
-            </ul>
+            
+            <div id="blur" class="meio">
+                
+                 <div> <a id="imgmana" class="fotosmana" onclick="toggle()" ><img src="images/capa_mana.png" ></a>
+                </div>
+                <div><a class="fotossite" onclick="toggle()" id="img"><img src="images/capa_portifolio1.png" ></a></div>
+                <div><a class="fotosbrome" onclick="toggle()"><img src="images/capa_portifolio_brome.png"></a>
+                </div>
+                <div><a class="fotosfilme" onclick="toggle()"><img src="images/capa_starway.png"></a></div>
+            </div>
+            
+            
         </section>
-        <div class="popup" id="popmana">
+        <div class="popmanaclass" id="popmana">
+            <div class="conteudopop" id="contmana">
             <div id="carromana">
                 <div class="itemmana">
                     <img src="images/mana/MANA%20(1).png">
-            </div>
+                </div>
                 <div class="itemmana">
                     <img src="images/mana/MANA%20(2).png">
                  </div>
@@ -54,11 +61,30 @@
                     <img src="images/mana/MANA%20(6).png">
                  </div>
             </div>
+            <div class="poptxt" id="manatxt">
+                <p><b>Projeto Maná:</b><br> redesign da marca da capotaria Maná, uma empresa que fica na periferia de Vitória e foi afetada diretamente pela pandemia, a intenção desse projeto fora reaquecer a vendas da capotaria trabalhando a marca e sua preseça digital</p>
+            </div>
+            </div>
+            <a href ="#" class="closebtn" id="clx" onclick="toggle()">Fechar<i> / Close</i></a>
+            
+            <a class="closebtn" id="fechar" onclick="toggle()"><img src="images/fechar-simbolo-de-botao-circular.png"> </a>
         </div>
         <section class="skills">
         <div id="skills">
             <h1 class="titulo" id="arvore">Árvore de Habilidades / <i>Skills Tree</i></h1>
             </div>
         </section>
+        
+        
+        <script type="text/javascript">
+                function toggle(){
+                    var blur = document.getElementById('blur');
+                    blur.classList.toggle('active');
+                    
+                    var popmana = document.getElementById('popmana');
+                    popmana.classList.toggle('active');  
+                    }
+            
+            </script>
     </body>
 </html>
