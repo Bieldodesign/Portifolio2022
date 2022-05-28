@@ -26,7 +26,7 @@
         <!--Introdução-->
         <div class="bio">
             <h1 class="titulo" id="info">Designer & Web dev</h1>
-            <p id="bio">Prazer, sou Gabriel Palaoro, natural de Aracruz, Espírito Santo, Basil, estudante de Design na UFES, aficcionado por hitórias em quadrinhos e musica (além do design é claro), e a seguir terá uma coletanea dos trabalhos que fiz até então.<br><br><i>Hi, I am Gabriel Palaoro, from Aracruz, Espírito Santo, Brazil, I'm studying design at UFES, a comics and music lover (in addition a design obviously), followin up you will see some of my most recent works.</i></p>
+            <p id="bio">Prazer, sou Gabriel Palaoro, natural de Aracruz, Espírito Santo, Brasil, estudante de Design na UFES, aficionado por histórias em quadrinhos e música (além do design é claro), e a seguir terá uma coletânea dos trabalhos que fiz até então.<br><br><i>Hi, I am Gabriel Palaoro, from Aracruz, Espírito Santo, Brazil. I'm studying design at UFES, a comics and music lover (in addition to design obviously). Following up you will see some of my most recent works.</i></p>
        </div>
         
         <!--Conteudo central (miniaturas mais titulo da seção)-->
@@ -34,43 +34,152 @@
 
             <!-- Meio hq e botoes modais!-->
             <div id="blur" class="meio">
-                 <div> <button class="fotosmeio" data-modal="modal1" ><img src="images/capa_mana.png" ></button>
-                </div>
+                <div> <a class="fotosmeio" data-modal="modal1" ><img src="images/capa_mana.png" ></a>                </div>
                 <div><a class="fotosmeio" data-modal="modal2"><img src="images/capa_portifolio1.png" ></a></div>
                 <div><a class="fotosmeio" data-modal="modal3"><img src="images/capa_portifolio_brome.png"></a>
                 </div>
-                <div><a class="fotosmeio"><img src="images/capa_starway.png"></a></div>
+                <div><a class="fotosmeio" data-modal="modal4"><img src="images/capa_starway.png"></a></div>
+                <div><a class="fotosmeio" data-modal="modal5"><img src="images/miaufia_capa.png"></a></div>
             </div>
+        
         <!--Modal Maná!-->
-        <div class="popmanaclass" id="modal1">
+        <div class="modal" id="modal1">
             <div class="conteudopop" id="contmana">
-            <div id="carromana">
-                <div class="itemmana">
+            <div class="carrossel">
+                <div class="itemcarrossel">
                     <img src="images/mana/MANA%20(1).png">
                 </div>
-                <div class="itemmana">
+                <div class="itemcarrossel">
                     <img src="images/mana/MANA%20(2).png">
                  </div>
-                <div class="itemmana">
+                <div class="itemcarrossel">
                     <img src="images/mana/MANA%20(3).png">
                  </div>
-                <div class="itemmana">
+                <div class="itemcarrossel">
                     <img src="images/mana/MANA%20(4).png">
                  </div>
-                <div class="itemmana">
+                <div class="itemcarrossel">
                     <img src="images/mana/MANA%20(5).png">
                  </div>
-                <div class="itemmana">
+                <div class="itemcarrossel">
                     <img src="images/mana/MANA%20(6).png">
                  </div>
             </div>
             <div class="poptxt" id="manatxt">
-                <p><b>Projeto Maná:</b><br> Redesign da marca da capotaria Maná, uma empresa que fica na periferia de Vitória e foi afetada diretamente pela pandemia, a intenção desse projeto fora reaquecer a vendas da capotaria trabalhando a marca e sua preseça digital</p>
+                <p><b>Projeto Maná:</b> <br><br> Redesign da marca da capotaria Maná, uma empresa que fica na periferia de Vitória e foi afetada diretamente pela pandemia, a intenção desse projeto fora reaquecer a vendas da capotaria trabalhando a marca e sua presença digital<br><i>This work was a redesign to capotary Maná, a peripheral business who suffered a lot during the pandemic, this project intention was give a new brand and work in the Maná's digital presence.</i> <br> <a href="https://drive.google.com/file/d/1m0Sf7iGLb1TnJ1VRHfrGCMmxfGGPCfsK/view?usp=sharing">leia mais <i>/ read more.</i></a></p>
             </div>
             </div>
-            <a class="closebtn" id="clx" onclick="toggle()">Fechar<i> / Close</i></a>
+            <a class="closebtn" id="clx">Fechar<i> / Close</i></a>
             
-            <a class="closebtn" id="fechar" onclick="toggle()"><img src="images/fechar-simbolo-de-botao-circular.png"> </a>
+            <a class="closebtn" id="fechar"><img src="images/fechar-simbolo-de-botao-circular.png"> </a>
+        </div>
+        
+        <!--Modal Site1!-->
+        <div class="modal" id="modal2">
+        <div class="conteudopop" id="contsite">
+            <div class="carrossel">
+                <div class="itemcarrossel">
+                    <img src="images/site/site%20(3).png">
+                </div>
+                <div class="itemcarrossel">
+                    <img src="images/site/site%20(1).png">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/site/site%20(2).png">
+                 </div>
+            </div>
+            <div class="poptxt" id="sitetxt">
+                <p><b>Primeiro Site:</b> <br><br>Primeiro site feito por mim, na época meu próprio portfólio, apesar dos defeitos, gosto de usá-lo nas apresentações para observar minha evolução.<br><i>This is my first portfolio site, isn't that good, but i like to use it in mine presentations, look it facilitates me to see my evolution</i> <br> <a href="https://bieldodesign.github.io/PortifoIio/">leia mais <i>/ read more.</i></a></p>
+            </div>
+            </div>
+            <a class="closebtn" id="clx">Fechar<i> / Close</i></a>
+            
+            <a class="closebtn" id="fechar"><img src="images/fechar-simbolo-de-botao-circular.png"> </a>
+        
+        </div>
+        
+        <!--Modal Brome!-->
+        <div class="modal" id="modal3">
+            <div class="conteudopop" id="contbrome">
+            <div class="carrossel">
+                <div class="itemcarrossel">
+                    <img src="images/brome/Captura%20de%20tela%202022-05-28%20122803.png">
+                </div>
+                <div class="itemcarrossel">
+                    <img src="images/brome/brome%202.PNG">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/brome/brome%203.png">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/brome/brome%204.png">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/brome/brome%205.png">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/brome/brome%206.png">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/brome/brome%207.png">
+                 </div>
+            </div>
+            <div class="poptxt" id="brometxt">
+                <p><b>Projeto Bromélias:</b> <br><br> Durante um estágio na OSCIP (antiga ONG) Projeto Bromélias fiz vários trabalhos, desde post pro instagram, até trabalhos com arte aumentada, digitalização da marca e o principal um anuário de 10 anos de instituto.<br><i>During my year as a stagiary in Projeto Bromélias I do a lot of stuff, instagram posts, Augmented Art, digital Branding, but most of the time I work on this directory "10 years of Project Bromélias".</i> <br> <a href="https://drive.google.com/file/d/1m0Sf7iGLb1TnJ1VRHfrGCMmxfGGPCfsK/view?usp=sharing">leia mais <i>/ read more.</i></a></p>
+            </div>
+            </div>
+            <a class="closebtn" id="clx">Fechar<i> / Close</i></a>
+            
+            <a class="closebtn" id="fechar"><img src="images/fechar-simbolo-de-botao-circular.png"> </a>
+        </div>
+        
+        <!--Modal satway!-->
+        <div class="modal" id="modal4">
+            <div class="conteudopop" id="contmana">
+            <div class="carrossel">
+                <div class="itemcarrossel">
+                    <img src="images/capa_starway.png">
+                </div>
+            </div>
+            <div class="poptxt" id="manatxt">
+                <p><b>Filme StarWay:</b> <br><br> StarWay é um filme interativo que nos leva a pensar sobre a corrida espacial e nossa insignificância frente a ela, numa época em que se estuda turismo espacial nunca nem saí do meu país.". Filme feito com Javascript (P5.Js), click no link (melhor com fone). <br><i>StarWay is an interactive film made with Javascript (P5.Js), based on actual spacial race and our nothingness in this race "we're in a time when espacial turism is studied and I don't know my entire country" click on link (better with headphones).</i> <br> <a href="https://bieldodesign.github.io/videos/">leia mais <i>/ read more.</i></a></p>
+            </div>
+            </div>
+            <a class="closebtn" id="clx">Fechar<i> / Close</i></a>
+            
+            <a class="closebtn" id="fechar"><img src="images/fechar-simbolo-de-botao-circular.png"> </a>
+          </div>
+        
+        <!--Modal Miaufia!-->
+        <div class="modal" id="modal5">
+            <div class="conteudopop" id="contmiau">
+            <div class="carrossel">
+                <div class="itemcarrossel">
+                    <img src="images/miaufia/hq1.png">
+                </div>
+                <div class="itemcarrossel">
+                    <img src="images/miaufia/hq2.png">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/miaufia/hq3.png">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/miaufia/hq4.png">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/miaufia/hq5.png">
+                 </div>
+                <div class="itemcarrossel">
+                    <img src="images/miaufia/hq6.png">
+                 </div>
+            </div>
+            <div class="poptxt" id="brometxt">
+                <p><b>Miaufia:</b> <br><br> Como disse antes, sou aficionado por Histórias em Quadrinhos, e essa é a minha (e do meu amigo e xará Gabriel Gomes). Feita em dupla ilustração digital e tradicional, Mafia conta a história de Milo que se envolve em uma roubada por culpa da inocência de seu dono Gabriel.<br><i>As I said before, I'm a comics lover, and this is mine(and my friend Gabriel Gomes). The Comic was made in two illustration techniques, traditional and digital (vectors). Meowfia (Miaufia) is a story of a cat, Milo, who has to collaborate with the mafia to pay his owner's debts.</i> <br> <a href="https://drive.google.com/file/d/1m0Sf7iGLb1TnJ1VRHfrGCMmxfGGPCfsK/view?usp=sharing">leia mais <i>/ read more.</i></a></p>
+            </div>
+            </div>
+            <a class="closebtn" id="clx">Fechar<i> / Close</i></a>
+            
+            <a class="closebtn" id="fechar"><img src="images/fechar-simbolo-de-botao-circular.png"> </a>
         </div>
         
         <!--Arvore de habilidades-->
