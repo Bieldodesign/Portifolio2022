@@ -140,7 +140,6 @@ h1 {
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     ~webkit-overflow-scrlling: touch;
-    scroll-behavior: smooth;
 }
 .itemcarrossel{
     flex:none;
