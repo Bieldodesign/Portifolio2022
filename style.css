@@ -71,8 +71,10 @@ li #icone{
 /*infopesoal*/
 
 #info{
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-left: 80px;
+     width: 45%;
+    min-width: 500px;
+    height: 50%;
 }
 .bio{
     display: flex;
@@ -93,11 +95,6 @@ h1 {
     line-height: 116px;
     margin-left: 20px;
     padding-right: 20px;
-}
-#info{
-    width: 45%;
-    min-width: 500px;
-    height: 50%px;
 }
 #bio{
     text-align: left;
@@ -143,12 +140,14 @@ h1 {
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     ~webkit-overflow-scrlling: touch;
+    scroll-behavior: smooth;
 }
 .itemcarrossel{
     flex:none;
     width: 100%;
     height: 500px;
     scroll-snap-align: start;
+    pointer-events: none;
 }
 .carrossel img{
     width: 100%;
@@ -217,7 +216,7 @@ h1 {
     }
 }
 
-
+/*arvore de skills*/
 #arvore{
     font-size: 500%;
 }
@@ -243,8 +242,7 @@ h1 {
     text-align: left;
     font-size: 10px;
     background-color: snow;
-    width: 100%;
-    filter: drop-shadow(5px -5px 0px #000000);
+    filter: drop-shadow(0px -5px 0px #000000);
 }
 .contato{
     text-align: right;
@@ -260,4 +258,27 @@ h1 {
 .nome{
     padding-left: 50%;
     margin-bottom: -7px;
+}
+
+/* outros*/
+.itemcarrosseloutros{
+    flex:none;
+    height: 500px;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+#contoutros{
+    max-width: 600px;
+    width: 95%;
+    left: 60%;
+}
+.outros{
+    margin: 40px;;
+    display:flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+#tituloutros{
+    width: 30%;
+    text-align: right;
 }

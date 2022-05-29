@@ -21,7 +21,11 @@ window.onclick = function(e){
         e.target.style.display = "none";
     }
 };
-
-
-
-
+document.querySelectorAll(".carrossel")
+.addEventListener("wheel", event => {
+    if(event.deltaY > 0){
+        event.target.scrollBy(300,0)
+    }else{
+        event.target.scrollBy(-300,0)
+    }
+});
