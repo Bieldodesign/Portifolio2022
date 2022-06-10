@@ -234,11 +234,11 @@ h1 {
 .graficosskill img{
     max-height: 400px;
     max-width: 500px;
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 40px;
     border: 7px solid #000000;
-    filter: blur(4px)
+    /*filter: blur(4px)*/
 }
 
 /* outros*/

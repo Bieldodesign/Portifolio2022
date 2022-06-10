@@ -1,4 +1,5 @@
 //buscando botoes para abrir modal
+var blured;
 var modalBtns = document.querySelectorAll(".fotosmeio");
 
 modalBtns.forEach(function (btn) {
@@ -15,6 +16,11 @@ closeBtns.forEach(function(btn){
         };
 });
 
+/*if(blured){
+    document.getElementById('blur').style.filter = "blur(3px)";
+}else{
+    document.getElementById('blur').style.filter = "blur(0px)";
+}*/
 
 window.onclick = function(e){
     if(e.target.className === "modal"){
